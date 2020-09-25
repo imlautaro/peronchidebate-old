@@ -38,5 +38,9 @@ html, body{
     background: var(--color-primary-dark);
 }
 .main{
-    height: 100vh;
+    min-height: 80vh;
+}
+.icon{
+    width: 100%;
+    max-width: 256px;
 }
