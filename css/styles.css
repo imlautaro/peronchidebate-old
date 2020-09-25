@@ -1,0 +1,42 @@
+:root{
+    --color-primary: #0072bb;
+    --color-primary-dark: #00478a;
+}
+html, body{
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 16px;
+}
+.navbar-brand{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.button{
+    text-decoration: none;
+    font-size: 1rem;
+    border: 3px solid #DDD;
+    background: #FFF;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    color: var(--color-primary);
+}
+.button:hover{
+    color: var(--color-primary);
+    background: #F4F4F4;
+}
+.button-action{
+    text-decoration: none;
+    font-size: 1rem;
+    border: none;
+    color: #FFF;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    background: var(--color-primary);
+}
+.button-action:hover{
+    background: var(--color-primary-dark);
+}
+.main{
+    height: 100vh;
+}

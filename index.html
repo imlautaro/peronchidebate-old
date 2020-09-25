@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peronchidebate | ¡La herramienta que todo buen peroncho debe tener!</title>
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <!-- Encode Sans (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav role="navigation" class="navbar navbar-expand navbar-light bg-white fixed-top border-bottom">
+        <div class="container py-2">
+            <a href="/" class="navbar-brand">Peronchidebate</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="https://github.com/imlautaro/peronchidebate" target="_blank" rel="nofollow" class="button">Ver en GitHub</a>
+                </li>
+            </ul>  
+        </div>
+    </nav>
+    <main>
+        <div class="container text-center d-flex justify-content-center flex-column align-items-center main">
+            <h1>Genera frases para debatir como un buen peroncho.</h1>
+            <p>Hacé clic en el botón de abajo cuantas veces sea necesario.</p>
+            <button class="button-action mt-2" id="button">Generar</button>
+            <p id="output" class="mt-4 d-none bg-success py-2 px-4 rounded text-white"></p>
+        </div>
+    </main>
+    <footer class="border-top">
+        <div class="container py-4 text-center">
+            <span>Diseñado y desarrollado por <a href="https://github.com/imlautaro" rel="nofollow" target="_blank">Lautaro Pereyra</a>.</span><br>
+            <small>¿Querés un sitio Web como este o simplemente donarme un choripan? Mandame un correo a social.lautaropereyra@gmail.com.</small>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script>
+        const button = document.getElementById('button');
+        const output = document.getElementById('output');
+        button.onclick = () => {
+            output.classList.remove('d-none');
+            output.innerText = 'Tu frase es: ' + generate();
+        };
+    </script>
+</body>
+</html>

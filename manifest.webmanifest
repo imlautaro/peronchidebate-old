@@ -1,0 +1,16 @@
+{
+    "name": "Peronchidebate",
+    "short_name": "Peronchidebate",
+    "description": "La herramienta que todo buen peroncho debe tener.",
+    "start_url": "/",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "theme_color": "#0072bb",
+    "icons": [
+        {
+        "src": "icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+        }
+    ]
+}
