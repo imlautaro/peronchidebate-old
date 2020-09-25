@@ -2,7 +2,7 @@
     "name": "Peronchidebate",
     "short_name": "Peronchidebate",
     "description": "La herramienta que todo buen peroncho debe tener.",
-    "start_url": "/peronchidebate",
+    "start_url": "/peronchidebate/",
     "background_color": "#FFFFFF",
     "display": "standalone",
     "theme_color": "#0072bb",
